@@ -22,7 +22,7 @@ html { box-sizing: border-box; }
   nav .p-{{id}} { border-color: {{ bg }}; }
   #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
   #{{id}} a { color: {{ fg }}; }
-  #{{id}} .sectiondivider { color: {{ bg }}; }
+  #{{id}} .sectiondivider { color: #262626; }
 {% endfor %}
 
 
@@ -31,7 +31,7 @@ html { box-sizing: border-box; }
 code, pre { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
 /* spesifically inline code */
-code, pre {
+code {
   background: rgba(255,255,255,0.2);
   display: inline;
   word-wrap: break-word;
@@ -47,7 +47,7 @@ pre {
   word-wrap: break-word;
 }
 
-.highlight { margin:20px 5%; }
+.highlighttable { margin:20px 5%; }
 
 
 /* ----- base elements ----- */
@@ -170,8 +170,9 @@ nav ul li:hover, nav ul li.active {
   display:block;
   width:100%;
   min-height:300px;
-  padding:210px 0;
+  padding:100px 0;
   background:url(img/bgnoise.png);
+  /* TODO: Change BG COLOR */
   /* generated noise from noisetexturegenerator.com */
 }
 
@@ -354,4 +355,27 @@ nav ul li:hover, nav ul li.active {
     -moz-column-count:    2;
     column-count:         2;
   }
+}
+
+.infoBox {
+  background-color: #fff;
+  padding: 20px;
+  color: #000;
+  text-align: center;
+}
+.infoBox a {
+  color: #0078D7 !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+.infoBox a:hover {
+  color: #0078D7 !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.infoBox .header {
+  text-align:center;  
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: #00a4ef;
 }
