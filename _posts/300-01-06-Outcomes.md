@@ -2,9 +2,8 @@
 title: "Outcomes"
 bg: Purple
 color: white
-fa-icon: cogs
 style: center
-fa-icon: users
+fa-icon: fa fa-hospital-o
 all: all
 ---
 Innovative big data analysis methods will be used to address the primary research questions below:
